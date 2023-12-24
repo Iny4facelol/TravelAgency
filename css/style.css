@@ -1,0 +1,683 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: #0b1d27;
+  width: 100%;
+  margin: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 40px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  color: white;
+  font-family: "Argent";
+  font-size: 24px;
+  text-shadow: 0px 0px 1px #2E2E2E;
+  padding: 5px;
+}
+header article {
+  text-align: center;
+}
+header article h1 {
+  font-family: "Argent";
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  letter-spacing: 4px;
+}
+header .header__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+header .header__login p {
+  font-family: "Argent";
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  text-shadow: 0px 0px 2px #2E2E2E;
+}
+header .header__login .bi-person-circle {
+  color: white;
+  font-size: 30px;
+  text-shadow: 0px 0px 2px #2E2E2E;
+}
+
+.main {
+  width: 100%;
+  background-position: 0px -1200px;
+  height: 920px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.main__img {
+  position: absolute;
+  width: 100%;
+  height: 920px;
+  object-fit: cover;
+  z-index: -1;
+  object-position: 0px -200px;
+}
+
+.blur {
+  position: absolute;
+  bottom: -165px;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to top, #0b1d27, transparent);
+  background-position: 0px -1150px;
+  filter: blur(5px);
+  margin: 0;
+}
+
+.section__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section__1 .section__1__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  padding-left: 50px;
+}
+.section__1 .section__1__left div p {
+  writing-mode: vertical-lr;
+  color: white;
+  font-family: "Argent";
+  font-size: 24px;
+  margin: 0;
+}
+.section__1 .section__1__left div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 32px;
+}
+.section__1 .section__1__center .section__1__text {
+  width: 800px;
+}
+.section__1 .section__1__center .section__1__text h2 {
+  color: white;
+  font-size: 70px;
+  font-family: "PT Serif", serif;
+  letter-spacing: 4px;
+  margin: 0;
+  text-align: left;
+}
+.section__1 .section__1__center .section__1__text h2 span {
+  text-shadow: 0px 0px 16px silver;
+}
+.section__1 .section__1__center .section__1__text2 {
+  width: 800px;
+}
+.section__1 .section__1__center .section__1__text2 .center__text {
+  color: #ffea9f;
+  font-size: 24px;
+  text-align: left;
+  font-family: "Argent";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.section__1 .section__1__center .section__1__text2 .center__text::before {
+  content: "";
+  background-color: #ffea9f;
+  width: 110px;
+  height: 3px;
+  border: 1px solid #ffea9f;
+  border-radius: 10px;
+}
+.section__1 .section__1__center .section__1__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.section__1 .section__1__center .section__1__button button {
+  width: 35%;
+  height: 70px;
+  background-color: #ffea9f;
+  border-style: none;
+  box-shadow: 0px 0px 10px #2e2e2e;
+  border-radius: 5px;
+  font-size: 32px;
+  font-family: "Pt Serif";
+  transition: 0.4s all;
+}
+.section__1 .section__1__center .section__1__button button span {
+  background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(46, 46, 46, 0.7254901961), rgba(78, 67, 1, 0.678));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.section__1 .section__1__center .section__1__button button:hover {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.089), rgba(1, 59, 6, 0.479));
+  box-shadow: inset 0px 0px 4px black;
+}
+.section__1 .section__1__center .section__1__button button:hover span {
+  background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.section__1 .section__1__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+.section__1 .section__1__right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section__1 .section__1__right div ul {
+  text-align: center;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  position: relative;
+}
+.section__1 .section__1__right div ul .item__1::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: rgba(236, 232, 228, 0);
+  border: 1px solid white;
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+  top: 0px;
+}
+.section__1 .section__1__right div ul .item__2::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: rgba(236, 232, 228, 0);
+  border: 1px solid white;
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+  top: 0;
+}
+.section__1 .section__1__right div ul .item__3::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: rgba(236, 232, 228, 0);
+  border: 1px solid white;
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+  top: 0;
+  z-index: 3;
+}
+.section__1 .section__1__right div ul .item__4::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: rgba(236, 232, 228, 0);
+  border: 1px solid white;
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+  top: 0;
+  z-index: 4;
+}
+
+.section__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.section__2__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+.section__2__1 .section__2__textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 0px 200px;
+}
+.section__2__1 .section__2__textbox .section__2__title {
+  font-size: 24px;
+  color: #ffea9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+  font-family: "Argent";
+}
+.section__2__1 .section__2__textbox .section__2__title p {
+  margin: 0;
+}
+.section__2__1 .section__2__textbox .section__2__title::before {
+  content: "";
+  background-color: #ffea9f;
+  width: 80px;
+  height: 2px;
+  border: 1px solid #ffea9f;
+  border-radius: 10px;
+}
+.section__2__1 .section__2__textbox .section__2__subtitle {
+  font-size: 32px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+.section__2__1 .section__2__textbox .section__2__core {
+  font-size: 16px;
+  color: white;
+  font-family: "Argent";
+}
+.section__2__1 .section__2__textbox .section__2__end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  color: #ffea9f;
+  font-family: "Argent";
+  gap: 5px;
+}
+.section__2__1 .section__2__textbox .section__2__end p {
+  margin: 0;
+}
+.section__2__1 .section__2__imgbox {
+  width: 90%;
+  height: 100%;
+}
+.section__2__1 .section__2__imgbox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  box-shadow: 0px 20px 20px black;
+}
+
+.section__2__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+.section__2__2 .section__2__textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 0px 200px;
+  order: 2;
+}
+.section__2__2 .section__2__textbox .section__2__title {
+  font-size: 24px;
+  color: #ffea9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+  font-family: "Argent";
+}
+.section__2__2 .section__2__textbox .section__2__title p {
+  margin: 0;
+}
+.section__2__2 .section__2__textbox .section__2__title::before {
+  content: "";
+  background-color: #ffea9f;
+  width: 80px;
+  height: 2px;
+  border: 1px solid #ffea9f;
+  border-radius: 10px;
+}
+.section__2__2 .section__2__textbox .section__2__subtitle {
+  font-size: 32px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+.section__2__2 .section__2__textbox .section__2__core {
+  font-size: 16px;
+  color: white;
+  font-family: "Argent";
+}
+.section__2__2 .section__2__textbox .section__2__end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  color: #ffea9f;
+  font-family: "Argent";
+  gap: 5px;
+}
+.section__2__2 .section__2__textbox .section__2__end p {
+  margin: 0;
+}
+.section__2__2 .section__2__imgbox {
+  width: 90%;
+  height: 100%;
+  order: 1;
+}
+.section__2__2 .section__2__imgbox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  box-shadow: 0px 20px 20px black;
+}
+
+.section__2__3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+.section__2__3 .section__2__textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 0px 200px;
+}
+.section__2__3 .section__2__textbox .section__2__title {
+  font-size: 24px;
+  color: #ffea9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+  font-family: "Argent";
+}
+.section__2__3 .section__2__textbox .section__2__title p {
+  margin: 0;
+}
+.section__2__3 .section__2__textbox .section__2__title::before {
+  content: "";
+  background-color: #ffea9f;
+  width: 80px;
+  height: 2px;
+  border: 1px solid #ffea9f;
+  border-radius: 10px;
+}
+.section__2__3 .section__2__textbox .section__2__subtitle {
+  font-size: 32px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+.section__2__3 .section__2__textbox .section__2__core {
+  font-size: 16px;
+  color: white;
+  font-family: "Argent";
+}
+.section__2__3 .section__2__textbox .section__2__end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  color: #ffea9f;
+  font-family: "Argent";
+  gap: 5px;
+}
+.section__2__3 .section__2__textbox .section__2__end p {
+  margin: 0;
+}
+.section__2__3 .section__2__imgbox {
+  width: 90%;
+  height: 100%;
+}
+.section__2__3 .section__2__imgbox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  box-shadow: 0px 20px 20px black;
+  object-position: 0px -150px;
+}
+
+.section__2__4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section__2__4 .section__2__textbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.section__2__4 .section__2__textbutton div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.section__2__4 .section__2__textbutton div p {
+  color: white;
+  font-family: "PT Serif";
+  font-size: 40px;
+  text-align: left;
+}
+.section__2__4 .section__2__textbutton .button__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.section__2__4 .section__2__textbutton .button__box button {
+  width: 280px;
+  height: 70px;
+  background-color: #ffea9f;
+  border-style: none;
+  box-shadow: 0px 0px 10px #2e2e2e;
+  border-radius: 5px;
+  font-size: 32px;
+  font-family: "Pt Serif";
+  transition: 0.8s all;
+}
+.section__2__4 .section__2__textbutton .button__box button span {
+  background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(46, 46, 46, 0.7254901961), rgba(78, 67, 1, 0.678));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.section__2__4 .section__2__textbutton .button__box button:hover {
+  background-color: rgba(0, 0, 0, 0.089);
+  box-shadow: inset 0px 0px 4px black;
+}
+.section__2__4 .section__2__textbutton .button__box button:hover span {
+  background: linear-gradient(rgb(201, 190, 190), #8f7e7e, rgba(126, 107, 2, 0.932));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.section__2__4 .section__2__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-direction: column;
+  text-align: center;
+}
+.section__2__4 .section__2__text p {
+  width: 70%;
+  color: white;
+  font-family: "Argent";
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Argent";
+  src: url(../fonts/ArgentumSans-Light.otf);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
