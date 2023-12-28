@@ -24,7 +24,7 @@ header{
             font-size: $font-size__h2;
             color: white;
             margin: 0;
-            letter-spacing: 4px
+            letter-spacing: 4px;
         }
     }
     .header__login{
@@ -51,4 +51,37 @@ header{
 }
 
 
+/* NAV ITEM HOVER */
 
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .nav__item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #fdfdfdb2;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav__item:hover:before, .nav__item:focus:before, .nav__item:active:before {
+    left: 0;
+    right: 0;
+    
+  }
+  

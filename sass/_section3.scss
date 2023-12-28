@@ -1,0 +1,77 @@
+@import "var";
+
+.section__3 {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin-bottom: 20px;
+    padding: 2rem;
+    
+   
+    
+    article{
+        width: 20%;
+        box-shadow: 0px 0px 6px black;
+        
+        
+        
+
+        .section__3__content{
+            height: 100%;
+            @include flex-align;
+            align-items: end;
+            padding-bottom: 3rem;
+            transition: 0.3s all;
+            
+            p{
+                color: white;
+                font-family: "PT Serif";
+                font-size: $font-size__h3;
+                text-shadow: 0px 0px 2px black;
+                z-index: 2;
+                
+                
+                
+            }
+        &:hover{
+            transform: scale(1.1,1.1);
+            box-shadow: 0px 0px 10px silver;
+            z-index: 22;
+        }
+        }
+
+    }
+}
+
+
+.c__item1{
+    background-image: url(../images/mountains-1587287_1920.jpg);
+    background-size: cover;
+    border-radius: 1% 1% 1% 1%;
+    
+}
+.c__item2{
+    background-image: url(../images/ezra-jeffrey-comeau-D8Ju6t81AP8-unsplash.jpg);
+    background-size: cover;
+    border-radius: 1% 1% 1% 1%;
+}
+.c__item3{
+    background-image: url(../images/jeremy-allouche-LLc-bFnJJ1o-unsplash.jpg);
+    background-size: cover;
+    border-radius: 1% 1% 1% 1%;
+    
+}
+.c__item4{
+    background-image: url(../images/vertical-shot-beautiful-scenery-lost-lake-whistler-bc-canada.jpg);
+    background-size: cover;
+    border-radius: 1% 1% 1% 1%;
+    
+}
+.c__item5{
+    background-image: url(../images/green-grass-growing-water-with-trees-mountains-near-lake-tahoe-ca.jpg);
+    background-size: cover;
+    border-radius: 1% 1% 1% 1%;
+    
+}

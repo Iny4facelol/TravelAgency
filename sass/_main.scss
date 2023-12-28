@@ -10,6 +10,7 @@
 
 }
 
+
 .main__img {
     position: absolute;
     width: 100%;
@@ -64,7 +65,15 @@
                 color: white;
                 font-family: 'PT Serif', serif;
                 font-size: $font-size__h3;
+                transition: 0.3s all;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                    text-shadow: 2px 2px 4px silver;
+                    
+                }
             }
+
         }
     }
 
@@ -127,7 +136,7 @@
                 border-radius: 5px;
                 font-size: $font-size__h3;
                 font-family: "Pt Serif";
-                transition: .4s all;
+                transition: 0.3s all;
 
                 span {
                     background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));

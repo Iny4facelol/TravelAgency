@@ -1,0 +1,117 @@
+footer{
+    @include flex-align;
+    flex-direction: column;
+    margin-top: 150px;
+    background-color: #00121c;
+    width: 100%;
+    height: 350px;
+    font-family: "Argent";
+    .footer__top{
+        @include flex-align;
+        align-items: start;
+        justify-content: space-evenly;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        
+        .footer__top__1{
+            @include flex-align;
+            flex-direction: row;
+            font-size: $font-size__h4;
+            div{
+                @include flex-align;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+                form{
+                    @include flex-align;
+                    flex-direction: column;
+                    position: relative;
+                    button{
+                        position: absolute;
+                        right: 0px;
+                        top: 25px;
+                        background-color: #00121c;
+                        border: none;
+                        color: silver;
+                        
+                    }
+                }
+                input{
+                    background-color: #00121c;
+                    border: none;
+                    color: white;
+                }
+                &::after{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                    position: absolute;
+                    top: 65px;
+                    
+                }
+                input:focus{
+                    outline: none;
+                }
+            }
+        }
+        .footer__top__2{
+            @include flex-align;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            .footer__top__2__left1{
+                p{
+
+                    color: $font-color__title;
+                    font-weight: bold;
+                    margin: 0;
+                    letter-spacing: 1px;
+                }
+            }
+            .footer__top__2__left2{
+                p{
+                    color:white;
+                    
+
+                }
+            }
+        }
+        .footer__top__3{
+            @include flex-align;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            .footer__top__2__mid1{
+                p{
+                    color: $font-color__title;
+                    margin: 0;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+
+        }
+        .footer__top__4{
+            div{
+                p{
+                    font-size: $font-size__h2;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+        
+
+    
+    }
+    .footer__bot{
+        .footer__bot__1{
+            padding: 15px 0px;
+            p{
+                color: silver;
+            }
+        }
+    }
+}
