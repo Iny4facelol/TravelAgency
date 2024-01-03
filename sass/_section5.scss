@@ -1,4 +1,4 @@
-.section__5{
+.section__5 {
     @include flex-align;
     flex-direction: column;
     position: relative;
@@ -6,7 +6,8 @@
     height: 400px;
     gap: 30px;
     background-image: url(../images/sky-1373167_1920.jpg);
-    img{
+
+    img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -14,10 +15,11 @@
         z-index: -1;
         object-position: 0px -600px;
         top: 0px;
-        
+
     }
-    .section__5__title{
-        p{
+
+    .section__5__title {
+        p {
             color: white;
             font-size: $font-size__h2;
             font-family: "PT Serif";
@@ -25,9 +27,11 @@
             letter-spacing: 2px;
         }
     }
-    .section__5__text{
+
+    .section__5__text {
         width: 45%;
-        p{
+
+        p {
             color: white;
             font-size: $font-size__p;
             font-family: "Argent";
@@ -35,7 +39,8 @@
         }
 
     }
-    .section__5__button{
+
+    .section__5__button {
         button {
             width: 100%;
             height: 70px;
@@ -74,4 +79,82 @@
         }
     }
 
+}
+
+
+@media (max-width: 500px) {
+
+    .section__5 {
+        @include flex-align;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        background-image: url(../images/sky-1373167_1920.jpg);
+        background-position: 0px -400px;
+        padding: 15px 15px;
+        .section__5__title {
+            p {
+                color: white;
+                font-size: $font-size__h3;
+                font-family: "PT Serif";
+                text-shadow: 0px 0px 4px black;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+        }
+
+        .section__5__text {
+            width: 100%;
+
+            p {
+                color: white;
+                font-size: $font-size__p;
+                font-family: "Argent";
+                text-align: center;
+            }
+
+        }
+
+        .section__5__button {
+            button {
+                width: 100%;
+                height: 70px;
+                background-color: $font-color__title;
+                border-style: none;
+                box-shadow: 0px 0px 10px #2e2e2e;
+                border-radius: 5px;
+                font-size: $font-size__h3;
+                font-family: "Pt Serif";
+                transition: 0.3s all;
+                z-index: 2;
+
+                span {
+                    background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+
+            }
+
+            button:hover {
+                background: linear-gradient(45deg, rgba(0, 0, 0, 0.089), rgba(1, 59, 6, 0.479));
+                box-shadow: inset 0px 0px 4px black;
+
+                span {
+                    background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+
+                }
+            }
+        }
+
+    }
 }

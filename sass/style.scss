@@ -7,7 +7,7 @@
 @import "section5";
 @import "section6";
 @import "footer";
-
+@import "mq";
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
@@ -22,17 +22,18 @@
 
 
 
-.body{
+.body {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 125px;
 }
 
+@media (max-width: 500px) {
 
-
-
-
-
-
-
-
+    .body {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        overflow: hidden;
+    }
+}
