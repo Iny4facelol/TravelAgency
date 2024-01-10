@@ -34,14 +34,15 @@ ol[role='list'] {
 }
 
 ul {
-  list-style: none;
+  list-style: none !important;
 }
+
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background-color: #0b1d27;
+  background-color: #0b1d27 !important;
   width: 100%;
   margin: 0;
 
@@ -73,8 +74,8 @@ a:not([class]) {
 }
 
 a {
-  text-decoration: none;
-  color: currentColor;
+  text-decoration: none !important;
+  color: currentColor !important;
 }
 
 /* Make images easier to work with */

@@ -86,14 +86,15 @@
             h2 {
                 color: white;
                 font-size: 70px;
-                font-family: 'PT Serif', serif;
+                font-family: 'PT Serif', serif !important;
                 letter-spacing: 4px;
                 margin: 0;
                 text-align: left;
+                font-weight: bold;
 
                 span {
 
-                    text-shadow: 0px 0px 16px silver;
+                    text-shadow: 0px 0px 16px silver !important;
                 }
             }
         }
@@ -138,16 +139,17 @@
                 font-size: $font-size__h3;
                 font-family: "Pt Serif";
                 transition: 0.3s all;
-
-                span {
+                color: #a87932;
+                letter-spacing: 1px;
+                span{
                     background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));
                     background-clip: text;
+                    -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: bold;
                     letter-spacing: 1px;
 
                 }
-
 
             }
 
@@ -158,6 +160,7 @@
                 span {
                     background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
                     background-clip: text;
+                    -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: bold;
                     letter-spacing: 1px;
@@ -205,7 +208,7 @@
         backdrop-filter: blur(5px);
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 00px;
         position: relative;
     
     }
@@ -287,14 +290,15 @@
     
             .section__1__text2 {
                 width: 100%;
+                @include flex-align;
     
                 .center__text {
                     color: $font-color__title;
                     font-size: $font-size__p;
-                    text-align: left;
+                    text-align: center;
                     font-family: "Argent";
                     @include flex-align;
-                    justify-content: left;
+                    
                     gap: 30px;
                     margin-bottom: 20px;
                 }
@@ -329,6 +333,7 @@
                     span {
                         background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));
                         background-clip: text;
+                        -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-weight: bold;
                         letter-spacing: 1px;
@@ -345,6 +350,7 @@
                     span {
                         background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
                         background-clip: text;
+                        -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-weight: bold;
                         letter-spacing: 1px;
@@ -384,7 +390,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 
 
     .main {
@@ -419,7 +425,7 @@
     
         .section__1__left {
             @include flex-align;
-            width: 10%;
+            width: 100%;
             flex-direction: row;
             gap: 35px;
             padding-left: 10px;
@@ -432,6 +438,7 @@
                     font-family: 'Argent';
                     font-size: $font-size__p;
                     margin: 0;
+                    
     
     
                 }
@@ -513,19 +520,21 @@
                 padding-top: 20px;
     
                 button {
-                    width: 45%;
-                    height: 50px;
+                    width: 35%;
+                    height: 100%;
                     background-color: $font-color__title;
                     border-style: none;
                     box-shadow: 0px 0px 10px #2e2e2e;
                     border-radius: 5px;
-                    font-size: $font-size__p;
+                    font-size: $font-size__h4;
                     font-family: "Pt Serif";
                     transition: 0.3s all;
+                    padding:15px;
     
                     span {
                         background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));
                         background-clip: text;
+                        -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-weight: bold;
                         letter-spacing: 1px;
@@ -542,6 +551,210 @@
                     span {
                         background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
                         background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+    
+                    }
+                }
+    
+            }
+        }
+    
+        .section__1__right {
+            @include flex-align;
+            display: none;
+            width: 0%;
+            padding-left: 0px;
+    
+    
+            div {
+                @include flex-align;
+                flex-direction: column;
+    
+    
+                ul {
+                    text-align: center;
+                    color: white;
+                    font-family: 'PT Serif', serif;
+                    font-size: $font-size__p;
+                    margin: 0;
+                    font-weight: bold;
+                    position: relative;
+    
+                }
+            }
+    
+        }
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+
+    .main {
+        width: 100%;
+    
+        background-position: 0px -1200px;
+        
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+    
+    }
+    
+    
+    .main__img {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        object-position: 0px 0px;
+    }
+    .section__1 {
+        @include flex-align;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        
+    
+    
+        .section__1__left {
+            @include flex-align;
+            width: 100%;
+            flex-direction: row;
+            gap: 35px;
+            padding-left: 10px;
+            order: 2;
+    
+            div {
+                p {
+                    writing-mode: horizontal-tb;
+                    color: white;
+                    font-family: 'Argent';
+                    font-size: $font-size__p;
+                    margin: 0;
+                    
+    
+    
+                }
+            }
+    
+            div {
+    
+                i {
+                    @include flex-align;
+                    writing-mode: vertical-lr;
+                    color: white;
+                    font-family: 'PT Serif', serif;
+                    font-size: $font-size__h4;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.2);
+                        text-shadow: 2px 2px 4px silver;
+                        
+                    }
+                }
+    
+            }
+        }
+    
+    
+        .section__1__center {
+            width: 100%;
+            padding: 20px;
+            .section__1__text {
+                @include flex-align;
+                width: 100%;
+                
+                h2 {
+                    color: white;
+                    font-size: $font-size__h2;
+                    font-family: 'PT Serif', serif;
+                    letter-spacing: 4px;
+                    margin: 0;
+                    text-align: center;
+    
+                    span {
+    
+                        text-shadow: 0px 0px 16px silver;
+                    }
+                }
+            }
+    
+            .section__1__text2 {
+                width: 100%;
+    
+                .center__text {
+                    color: $font-color__title;
+                    font-size: $font-size__p;
+                    text-align: center;
+                    font-family: "Argent";
+                    @include flex-align;
+                    justify-content: left;
+                    gap: 30px;
+                    margin-bottom: 20px;
+                    
+                }
+    
+                .center__text::before {
+                    display: none;
+                    content: "";
+                    background-color: $font-color__title;
+                    width: 100px;
+                    height: 2px;
+                    border: 1px solid $font-color__title;
+                    border-radius: 10px;
+                }
+    
+    
+            }
+    
+            .section__1__button {
+                @include flex-align;
+                padding-top: 20px;
+    
+                button {
+                    width: 55%;
+                    height: 100%;
+                    background-color: $font-color__title;
+                    border-style: none;
+                    box-shadow: 0px 0px 10px #2e2e2e;
+                    border-radius: 5px;
+                    font-size: 24px;
+                    font-family: "Pt Serif";
+                    transition: 0.3s all;
+                    padding: 10px;
+    
+                    span {
+                        background: linear-gradient(rgba(0, 0, 0, 0.726), #2e2e2eb9, rgba(78, 67, 1, 0.678));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+    
+                    }
+    
+    
+                }
+    
+                button:hover {
+                    background: linear-gradient(45deg, rgba(0, 0, 0, 0.089), rgba(1, 59, 6, 0.479));
+                    box-shadow: inset 0px 0px 4px black;
+    
+                    span {
+                        background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
+                        background-clip: text;
+                        -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-weight: bold;
                         letter-spacing: 1px;

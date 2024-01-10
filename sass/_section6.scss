@@ -2,6 +2,7 @@
     @include flex-align;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 
     .section__6__title {
         @include flex-align;
@@ -116,11 +117,13 @@
     @include flex-align;
     flex-direction: column;
     gap: 150px;
+    height: 100%;
 
     .section__6__button {
         @include flex-align;
         flex-direction: column;
         width: 100%;
+        height: 100%;
         text-align: center;
 
         button {
