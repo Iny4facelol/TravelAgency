@@ -21,7 +21,6 @@ header {
             color: white;
             font-family: "Argent";
             font-size: $font-size__h4;
-            text-shadow: 0px 0px 1px #2E2E2E;
             padding: 5px;
             flex-wrap: wrap;
 
@@ -81,7 +80,7 @@ header {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #fdfdfdb2;
+    background: #fdfdfd;
     height: 2px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -189,7 +188,7 @@ header {
         @include flex-align;
         justify-content: space-around;
         flex-direction: row;
-        padding: 5px;
+        padding: 60px;
 
         .container-fluid {
             @include flex-align;
@@ -294,7 +293,7 @@ header {
         @include flex-align;
         justify-content: space-around;
         flex-direction: row;
-        padding: 5px;
+        padding: 40px;
 
         .container-fluid {
             @include flex-align;

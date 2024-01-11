@@ -127,7 +127,6 @@ header .navbar ul {
   color: white;
   font-family: "Argent";
   font-size: 24px;
-  text-shadow: 0px 0px 1px #2E2E2E;
   padding: 5px;
   flex-wrap: wrap;
 }
@@ -175,7 +174,7 @@ header .navbar .navbar-brand {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: rgba(253, 253, 253, 0.6980392157);
+  background: #fdfdfd;
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -268,7 +267,7 @@ header .navbar .navbar-brand {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    padding: 5px;
+    padding: 60px;
   }
   header .container-fluid {
     display: flex;
@@ -359,7 +358,7 @@ header .navbar .navbar-brand {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    padding: 5px;
+    padding: 40px;
   }
   header .container-fluid {
     display: flex;
@@ -608,6 +607,12 @@ header .navbar .navbar-brand {
   margin: 0;
   font-weight: bold;
   position: relative;
+}
+.section__1 .section__1__right div ul .item__1 {
+  transition: 0.5s all;
+}
+.section__1 .section__1__right div li:hover {
+  color: #ffea9f;
 }
 
 @media (max-width: 1200px) {
@@ -2135,7 +2140,7 @@ header .navbar .navbar-brand {
     justify-content: center;
     text-align: left;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
   .section__2__1 .section__2__textbox .section__2__title {
     font-size: 24px;
@@ -2210,7 +2215,7 @@ header .navbar .navbar-brand {
     justify-content: center;
     text-align: left;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0px 20px;
     order: 0;
   }
   .section__2__2 .section__2__textbox .section__2__title {
@@ -2288,7 +2293,7 @@ header .navbar .navbar-brand {
     justify-content: center;
     text-align: left;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
   .section__2__3 .section__2__textbox .section__2__title {
     font-size: 24px;
@@ -2573,8 +2578,8 @@ header .navbar .navbar-brand {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin-bottom: 20px;
-    padding: 2rem;
+    margin-bottom: 0px;
+    padding: 0px 20px;
   }
   .section__3 article {
     width: 100%;
@@ -2783,7 +2788,7 @@ header .navbar .navbar-brand {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 20px;
   }
   .section__4 .section__4__top {
     display: flex;
@@ -2998,6 +3003,70 @@ header .navbar .navbar-brand {
   letter-spacing: 1px;
 }
 
+@media (max-width: 1000px) {
+  .section__5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    background-image: url(../images/sky-1373167_1920.jpg);
+    background-position: 0px -400px;
+    padding: 15px 15px;
+  }
+  .section__5 .section__5__title p {
+    color: white;
+    font-size: 32px;
+    font-family: "PT Serif";
+    text-shadow: 0px 0px 4px black;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .section__5 .section__5__text {
+    width: 100%;
+  }
+  .section__5 .section__5__text p {
+    color: white;
+    font-size: 16px;
+    font-family: "Argent";
+    text-align: center;
+  }
+  .section__5 .section__5__button button {
+    width: 100%;
+    height: 70px;
+    background-color: #ffea9f;
+    border-style: none;
+    box-shadow: 0px 0px 10px #2e2e2e;
+    border-radius: 5px;
+    font-size: 32px;
+    font-family: "Pt Serif";
+    transition: 0.3s all;
+    z-index: 2;
+  }
+  .section__5 .section__5__button button span {
+    background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(46, 46, 46, 0.7254901961), rgba(78, 67, 1, 0.678));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .section__5 .section__5__button button:hover {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.089), rgba(1, 59, 6, 0.479));
+    box-shadow: inset 0px 0px 4px black;
+  }
+  .section__5 .section__5__button button:hover span {
+    background: linear-gradient(rgb(201, 190, 190), #f0eaea, rgba(126, 107, 2, 0.932));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
 @media (max-width: 500px) {
   .section__5 {
     display: flex;
@@ -3181,7 +3250,7 @@ header .navbar .navbar-brand {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 150px;
+  gap: 100px;
   height: 100%;
 }
 .section__6__container .section__6__button {
@@ -3794,7 +3863,7 @@ footer .footer__bot .footer__bot__1 p {
 }
 .section__6__container {
   flex-direction: column;
-  gap: 50px;
+  gap: 110px;
 }
 .section__6__container .section__6__button {
   display: flex;
@@ -3820,158 +3889,35 @@ footer .footer__bot .footer__bot__1 p {
   cursor: pointer;
 }
 
-/*
-@media (max-width: 1100px) {
-    .section__6 {
-        @include flex-align;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-
-        .section__6__title {
-            @include flex-align;
-            width: 100%;
-
-            p {
-                color: $font-color__title;
-                font-size: $font-size__h3;
-                font-family: "Argent";
-            }
-        }
-
-        .section__6__main1 {
-            @include flex-align;
-            width: 100%;
-            height: 200px;
-            color: white;
-            font-size: $font-size__p;
-            font-family: "Argent";
-            text-align: center;
-            gap: 250px;
-
-            div {
-                @include flex-align;
-                flex-direction: column;
-                gap: 15px;
-
-                .section__6__number {
-                    @include flex-align;
-                    border: 2px solid white;
-                    border-radius: 50%;
-                    width: 125px;
-                    height: 125px;
-                    position: relative;
-
-                }
-
-                .number__before::before {
-                    content: "";
-                    width: 200px;
-                    height: 2px;
-                    border-radius: 5%;
-                    background-color: white;
-                    position: absolute;
-                    left: -225px;
-                }
-
-                .number__after::after {
-                    content: "";
-                    width: 2px;
-                    height: 80px;
-                    border-radius: 5%;
-                    background-color: white;
-                    position: absolute;
-                    bottom: -120px;
-
-                }
-            }
-
-        }
-
-        .section__6__main2 {
-            @include flex-align;
-            width: 100%;
-            height: 200px;
-            color: white;
-            font-size: $font-size__p;
-            font-family: "Argent";
-            text-align: center;
-            gap: 250px;
-
-            div {
-                @include flex-align;
-                flex-direction: column;
-                gap: 15px;
-
-                .section__6__number {
-                    @include flex-align;
-                    border: 2px solid white;
-                    border-radius: 50%;
-                    width: 125px;
-                    height: 125px;
-                    position: relative;
-
-                }
-
-                .number__before::before {
-                    content: "";
-                    width: 200px;
-                    height: 2px;
-                    border-radius: 5%;
-                    background-color: white;
-                    position: absolute;
-                    left: -225px;
-                }
-
-                .number__after::after {
-                    content: "";
-                    width: 2px;
-                    height: 80px;
-                    border-radius: 5%;
-                    background-color: white;
-                    position: absolute;
-                    bottom: -100px;
-
-                }
-            }
-        }
-    }
-
-    .section__6__container {
-        @include flex-align;
-        flex-direction: column;
-        gap: 150px;
-        height: 100%;
-
-        .section__6__button {
-            @include flex-align;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-
-            button {
-                background-color: #0b1d27;
-                border: none;
-                font-size: $font-size__h1;
-                color: $font-color__title;
-                cursor: pointer;
-                padding: 0;
-            }
-
-            p {
-                color: $font-color__title;
-                font-size: $font-size__p;
-                font-family: "Argent";
-                margin: 0;
-                cursor: pointer;
-            }
-        }
-    }
-
-
+@media (max-width: 1300px) {
+  .section__6__container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .section__6__container .section__6__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .section__6__container .section__6__button button {
+    background-color: #0b1d27;
+    border: none;
+    font-size: 56px;
+    color: #ffea9f;
+    cursor: pointer;
+    padding: 0;
+  }
+  .section__6__container .section__6__button p {
+    color: #ffea9f;
+    font-size: 16px;
+    font-family: "Argent";
+    margin: 0;
+    cursor: pointer;
+  }
 }
-*/
 @media (max-width: 500px) {
   .section__6 {
     display: flex;
@@ -4091,6 +4037,7 @@ footer .footer__bot .footer__bot__1 p {
     align-items: center;
     flex-direction: column;
     gap: 60px;
+    padding: 0px 20px;
   }
   .section__6__container .section__6__button {
     display: flex;

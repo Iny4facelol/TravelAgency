@@ -189,7 +189,16 @@
                 margin: 0;
                 font-weight: bold;
                 position: relative;
+                .item__1{
+                    transition: 0.5s all;
 
+                }
+
+
+            }
+            li:hover{
+                color: $font-color__title;
+                
             }
         }
 
