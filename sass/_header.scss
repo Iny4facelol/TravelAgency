@@ -116,7 +116,7 @@ header {
     
             ul {
                 @include flex-align;
-                flex-direction: row;
+                flex-direction: column !important;
                 width: 100%;
                 
                 gap: 15px;
@@ -196,7 +196,7 @@ header {
 
             ul {
                 @include flex-align;
-                flex-direction: row;
+                flex-direction: column;
                 gap: 15px;
                 color: white;
                 font-family: "Argent";
@@ -293,7 +293,7 @@ header {
         @include flex-align;
         justify-content: space-around;
         flex-direction: row;
-        padding: 40px;
+        padding: 40px 20px;
 
         .container-fluid {
             @include flex-align;
@@ -301,7 +301,7 @@ header {
 
             ul {
                 @include flex-align;
-                flex-direction: row;
+                flex-direction: column;
                 gap: 15px;
                 color: white;
                 font-family: "Argent";
